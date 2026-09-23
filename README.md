@@ -70,3 +70,50 @@ Clone the repository:
 ```bash
 git clone git@github.com:GustavoRodrigues6/Taskly.git
 cd Taskly    
+```
+
+Install PHP dependencies:
+
+```bash
+composer install
+```
+
+Install frontend dependencies:
+
+```bash
+npm install
+```
+
+Create the environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate the application key:
+
+```bash
+php artisan key:generate    
+```
+
+Configure the database in .env and run the migrations:
+
+```bash
+php artisan migrate
+```
+
+Build the frontend assets:
+
+```bash
+npm run build
+```
+
+Start the development server:
+
+```bash
+php artisan serve
+```
+
+### 📌 Notes
+
+This project was developed as part of a professional internship and is presented here as part of my software development portfolio.
